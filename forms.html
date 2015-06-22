@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <title>Assignment 2 - Forms Page </title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" /> 
+        <link rel="stylesheet" href="css/mycss.css" type="text/css" media="screen" /> 
+</head>
+<body>
+        <nav>
+        <ul>
+           <li>
+               <a href="../index.html">My zenit Account</a>
+               <a href="index.html">Home</a>
+               <a href="gallery.html">Picture Gallery</a>
+               <a href="video.html">Video</a>
+               <a href="audio.html">Audio</a>
+               <a href="tables.html">Tables</a>
+               <a href="forms.html">Forms</a>
+	       <a href="css/mycss.css">CSS Used</a>
+               <a href="other.html">Other</a>
+           </li>
+        </ul>
+        </nav>
+
+<form method="post" name="form" action="index.html">
+<div class="mainform">
+  <div class="divform1">
+     <section class="formsect1">
+	<h1>Mama's Pizza</h1>
+	</section><hr />
+	<section class="formsect2">
+     	<p>416 or 905 222-6262</p>
+     </section><hr />
+     <section class="formsect3">
+       <table class="form_table">
+         <tr>
+             <td>Small</td>
+             <td>$11.55 </td>
+         </tr>
+	 <tr>
+             <td>Medium</td>
+             <td>$15.25</td>
+         </tr>
+	 <tr>
+             <td>Large</td>
+             <td>$22.00</td>
+         </tr>
+	 <tr>
+             <td>X-Large</td>
+             <td>$25.00</td>
+         </tr>
+	 <tr>
+             <td colspan="2" class="center">Toppings</td>
+         </tr>
+	 <tr>
+             <td>$1.79</td>
+             <td>Each</td>
+         </tr>
+	 <tr>
+             <td colspan="2" class="center">Plus 13% HST</td>
+         </tr>
+	 <tr>
+             <td colspan="2" class="center">Free Delivery</td>
+         </tr>
+       </table>
+     </section>
+     <section class="formsect4">
+       <h3>Your Price</h3><br /> 
+       <p><input size="10" maxlength="10" readonly="readonly" /></p>
+     </section>
+     </div>
+     <div class="divform2">
+         <section class="formsect"> 
+           <fieldset><legend>Personal Information</legend>
+            <p>
+              Name  <input type="text" name="name" size="35"/><br /><br />
+              Account No. <input type="text" name="account" id="one" size="28" maxlength="6" /><br /><br />
+              Phone No. <input type="text" name="phone" size="30" maxlength="10"/><br /><br />
+              Date of Birth <input type="text" name="date" size="28" maxlength="15" />
+            </p>
+           </fieldset>
+         </section>
+         <section class="formsect">
+          <fieldset><legend>Pizza Size and Crust</legend>
+           <p>
+            <select name="size" size="2">
+              <option value="1">Select Pizza Size </option> 
+              <option value="2">Small</option>
+              <option value="3">Medium</option>
+              <option value="4">Large</option>
+              <option value="5">X-Large</option>
+            </select>
+            <select name="size2" id="size2" size="2">
+              <option value="1">Regular Crust</option> 
+              <option value="2">Thin Crust</option>
+              <option value="1">Thick Crust</option>
+              <option value="2">Whole Wheat</option>
+            </select>
+           </p>
+          </fieldset>
+         </section>
+         <section class="formsect">
+          <fieldset><legend>Cheeses</legend>
+           <p>
+             <input type="radio" name="cheese" value="1" />Mozzarella     
+             <input type="radio" name="cheese" value="2" />Reduced Fat
+             <input type="radio" name="cheese" value="3" />Feta
+           </p>
+          </fieldset>
+         </section>
+          <section class="formsect">
+          <fieldset><legend>Sauces</legend>
+           <p>
+             <input type="radio" name="sauce" value="1" />Pizza Sauce       
+             <input type="radio" name="sauce" value="2" />BBQ Sauce 
+             <input type="radio" name="sauce" value="3" />Garlic Sauce
+           </p>
+          </fieldset>
+         </section>
+         <section class="formsect">
+           <fieldset><legend>Special Instructions</legend>
+             <p>
+                <textarea name="instructions"  cols="38" rows="4"></textarea>
+             </p>
+           </fieldset>
+         </section>
+         <section class="formsect">
+            <p>
+              <input class="placeorder" type="submit" value="PLACE YOUR ORDER" />
+              <input class="placeorder" type="reset"  value="START OVER" />
+         </section>
+       </div>
+       <div class="divform2">
+         <section class="formsect">
+           <fieldset><legend>Choose Toppings $1.79</legend>
+	     <div class="toppingdiv"><p>
+               <input type="checkbox" name="toppings" value="1"  />Anchovies<br />      
+               <input type="checkbox" name="toppings" value="2" />Bacon<br />      
+               <input type="checkbox" name="toppings" value="3" />Ham<br />      
+               <input type="checkbox" name="toppings" value="4" />Pepperoni<br />      
+               <input type="checkbox" name="toppings" value="5" />Salami<br />
+	       <input type="checkbox" name="toppings" value="6"  />Sausage<br />
+	      </p>
+	     </div>
+	     <div class="toppingdiv"><p>
+               <input type="checkbox" name="toppings" value="7" />Brocoli<br />      
+               <input type="checkbox" name="toppings" value="8" />Green Olives<br />      
+               <input type="checkbox" name="toppings" value="9" />Green Peppers<br />      
+               <input type="checkbox" name="toppings" value="10" />Mushrooms<br />      
+               <input type="checkbox" name="toppings" value="11"  />Red Onions<br />
+	       <input type="checkbox" name="toppings" value="12"  />Roasted Garlic
+              </p>
+            </div>
+       </fieldset>
+        </section>
+     </div>
+  </div>
+  </form>
+
+
+     <footer>
+        <section>
+           <script type="text/javascript">
+            //<![CDATA[
+             var dt=new Date(document.lastModified);   // Get document last modified date
+             document.write('<p>This page was last updated on '+dt.toLocaleString()) + '</p>';
+            //]]>
+           </script>
+        </section>
+    </footer>
+  </body>
+</html>
